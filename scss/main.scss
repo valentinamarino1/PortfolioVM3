@@ -1,0 +1,19 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/grid";
+@import "./layout/footer";
+
+@import "./components/carousel";
+@import "./components/bottons";
+ 
+@import "./pages/index";
+@import "./pages/acercademi";
+@import "./pages/inspiraciones";
+@import "./pages/proyectos";
+@import "./pages/contacto";

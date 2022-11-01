@@ -1,0 +1,49 @@
+/* COMIENZO PROYECTOS */
+
+.proyectos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px;
+
+
+    .linkproyecto {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .transition {
+            transition: 500ms all;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        a {
+            background-color: #f4f4f4;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 7px;
+        }
+    }
+
+    .linkreves {
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-flow: column-reverse;
+        }
+
+        a {
+            background-color: #f4f4f4;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 7px;
+        }
+    }
+}

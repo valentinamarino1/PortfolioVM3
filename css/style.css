@@ -1,0 +1,283 @@
+/* RESETEO */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3ccd4;
+}
+
+/* COMINEZO HEADER */
+header {
+  background-color: #f7f7f7;
+}
+header .nav-img {
+  width: 15%;
+}
+header .navegacion {
+  text-align: center;
+  margin: 0px auto;
+}
+header .navegacion ul {
+  list-style: none;
+}
+header .menu li {
+  position: relative;
+  display: inline-block;
+}
+header .menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  margin: 0px 40px;
+}
+
+/* INICIO FOOTER */
+footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+footer ul li {
+  margin: 15px 0px;
+}
+
+/* COMIENZO PAGINA DE INICIO */
+.container {
+  width: 75%;
+  height: 100%;
+}
+.container .imagenes {
+  display: flex;
+  overflow: auto;
+  margin: 20px;
+  gap: 10px;
+  scroll-behavior: auto;
+}
+
+/* COMIENZO ACERCA DE MI */
+.container .yo {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px 20px;
+  text-align: justify;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .container .yo {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+.container .yo .img img {
+  width: 300px;
+  height: 400px;
+  padding: 25px;
+}
+@media screen and (min-width: 768px) {
+  .container .yo .img img {
+    width: 400px;
+    height: 500px;
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container .yo .img img {
+    width: 500px;
+    height: 600px;
+  }
+}
+.container .yo .quien-soy .saludo {
+  margin-left: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+.container .yo .quien-soy p {
+  padding: 20px;
+  text-align: justify;
+}
+
+/* COMIENZO INSPIRACIONES */
+.contenedor-inspiraciones {
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .contenedor-inspiraciones {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-inspiraciones {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "zaha zaha joe" "peter peter joe";
+  }
+}
+.contenedor-inspiraciones .inspiraciones-zaha {
+  grid-area: zaha;
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-inspiraciones .inspiraciones-zaha {
+    flex-flow: row;
+  }
+}
+.contenedor-inspiraciones .inspiraciones-peter {
+  grid-area: peter;
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-inspiraciones .inspiraciones-peter {
+    flex-flow: row;
+  }
+}
+.contenedor-inspiraciones .inspiraciones-joe {
+  grid-area: joe;
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-inspiraciones .inspiraciones-joe {
+    height: 100%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-inspiraciones .inspiraciones-joe div img {
+    width: 400px;
+    height: 500px;
+  }
+}
+.contenedor-inspiraciones .inspiraciones {
+  border: 2px solid rgb(162, 58, 117);
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.contenedor-inspiraciones .inspiraciones div .inspiraciones-titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contenedor-inspiraciones .inspiraciones div .inspiraciones-titulo {
+    font-size: 1.5rem;
+  }
+}
+.contenedor-inspiraciones .inspiraciones div p {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .contenedor-inspiraciones .inspiraciones div p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.contenedor-inspiraciones .inspiraciones .img-inspiraciones {
+  width: 300px;
+  height: 400px;
+  padding: 25px;
+}
+@media screen and (min-width: 1440px) {
+  .contenedor-inspiraciones .inspiraciones .img-inspiraciones {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+/* COMIENZO PROYECTOS */
+.proyectos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.proyectos .linkproyecto {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.proyectos .linkproyecto .transition {
+  transition: 500ms all;
+}
+.proyectos .linkproyecto .transition:hover {
+  transform: scale(1.1);
+}
+.proyectos .linkproyecto a {
+  background-color: #f4f4f4;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+@media screen and (min-width: 1024px) {
+  .proyectos .linkreves {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}
+.proyectos .linkreves a {
+  background-color: #f4f4f4;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 7px;
+}
+
+/* COMIENZO CONTACTOS */
+.contacto {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  margin: 20px 40px;
+}
+@media screen and (min-width: 768px) {
+  .contacto {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+.contacto div .mapa {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .contacto div .mapa {
+    width: 135%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacto div .mapa {
+    width: 200%;
+  }
+}
+.contacto .contacto-form {
+  border: 2px solid rgb(162, 58, 117);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.contacto .contacto-form h2 {
+  margin-top: 40px;
+}
+.contacto .contacto-form h3 {
+  margin-top: 40px;
+}
+.contacto .contacto-form form div {
+  margin: 20px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

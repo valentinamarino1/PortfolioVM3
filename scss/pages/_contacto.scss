@@ -1,0 +1,54 @@
+/* COMIENZO CONTACTOS */
+
+.contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin: 20px 40px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    div {
+        .mapa {
+            width: 100%;
+
+            @media screen and (min-width: 1024px) {
+                width: 135%;
+            }
+
+            @media screen and (min-width: 1440px) {
+                width: 200%;
+            }
+
+        }
+    }
+
+    .contacto-form {
+        border: 2px solid rgb(162, 58, 117);
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+
+
+
+        h2 {
+            margin-top: 40px;
+        }
+
+
+        h3 {
+            margin-top: 40px;
+        }
+
+        form {
+            div {
+                margin: 20px 0px;
+            }
+        }
+    }
+}

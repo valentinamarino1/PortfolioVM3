@@ -1,0 +1,29 @@
+/* COMINEZO HEADER */
+
+header {
+    background-color: #f7f7f7;
+    .nav-img {
+        width: 15%;
+    }
+    .navegacion {
+        text-align: center;
+        margin: 0px auto;
+        ul {
+            list-style: none;
+        }
+    }
+    .menu {
+        li {
+            position: relative;
+            display: inline-block;
+
+            a {
+                display: block;
+                padding: 15px 20px;
+                color: black;
+                text-decoration: none;
+                margin: 0px 40px;
+            }
+        }
+    }
+}
